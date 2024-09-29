@@ -29,13 +29,13 @@ def enroll(UI: OverlayUI):
 
     UI.addObject(Text(
         pointTextAnchor.x, pointTextAnchor.y,
-        """Привет. Сначала нужно будет дать знать программе, где на экране находится игра.
-Для этого в этом окошке будет показан текст с подсказками.
-Вот такие точки можно перемещать:
-Закрыть программу всегда можно кликом по крестику в правом верхнем углу.
+        """你好。首先，您需要讓程式知道遊戲在螢幕上的位置。                     
+為此，帶有提示的文字將顯示在該視窗中。
+這些是您可以移動的點：
+您可以隨時透過點擊右上角的十字來關閉程式。
 
-Чтобы двинуться дальше, перемести эту точку на жёлтую точку посередине экрана.
-(Кстати, это окошко тоже можно переместить, передвинув черную точку в левом верхнем углу).""",
+若要繼續，請將此點移至螢幕中間的黃點。
+（順便說一句，這個視窗也可以透過移動左上角的黑點來移動）。""",
         color=QColor('white'),
         withBackground=True,
         backgroundColor=QColor('black'),
@@ -66,12 +66,11 @@ def configureThaumWindowCoords(UI: OverlayUI):
 
     UI.addObject(Text(
         pointTextAnchor.x, pointTextAnchor.y,
-        """Отлично! Сперва обозначим окно стола исследований.
-Открой интерфейс стола исследований, а потом передвинь две точки так, 
-чтобы прямоугольник обозначал границу этого окна.
+        """太好了！首先，讓我們指定研究表的視窗。                          
+開啟研究表介面，然後移動兩個點，使矩形標記出該視窗的邊框。
 
-Как будет готово, жми [Enter].
-Чтобы вернуться назад, нажми [Backspace]""",
+準備好後，按 [Enter]。
+若要返回，請按 [Backspace]""",
         color=QColor('white'),
         padding=MARGIN,
         withBackground=True,
@@ -102,23 +101,25 @@ def confirmThaumWindowSlots(UI, LTx, LTy, RBx, RBy):
 
     UI.addObject(Text(
         pointTextAnchor.x, pointTextAnchor.y,
-        """Программа автоматически определила положения кнопок взаимодействия 
-так, как ты видишь. Скорее всего сделала она это не точно, так что внимательно посмотри на точки,
-и, если нужно, передвинь их точно на нужные слоты / кнопки. Вот список, где какие точки:
+        """如您所見，程式會自動決定互動按鈕的位置。                            
+最有可能的是，它沒有準確地做到這一點，因此請仔細查看這些點，
+並在必要時將它們準確地移動到正確的插槽/按鈕。
 
-Желтые - слот для \"бумаги и пера\", слот для \"изучений\";
-Зеленая область - выбор аспектов из стола 5х5. Важно, чтобы все
-линии с точностью до пары пикселей разделяли аспекты;
-Голубые - переход по страницам аспектов влево / вправо;
-Розовые - удаление аспектов из смешивателя, смешение аспектов;
-Шестиугольная область - место выкладывания аспектов в ячейки 
-(очень важно совпадение всех центров ячеек на пересечениях линий);
-Фиолетовая область - 9х3 внутренних слотов инвентаря.
+以下是這些點的列表：
 
-Как будет готово - жми [Enter]
-Чтобы вернуться назад, нажми [Backspace]
-(!!! После завершения этой конфигурации, если окно с игрой не во весь экран, 
-не передвигайте его по экрану !!)""",
+黃色 - \"筆和墨水\"槽、\"研究筆記\"槽;
+綠色區域 - 從 5x5 表中選擇元素。
+重要的是，所有線都將各個元素分隔在幾個像素內;
+藍色 - 左/右瀏覽元素頁面;
+粉紅色 - 從合成區中移除元素、合成元素;
+六邊形區域是單元格中佈局元素的地方
+(非常重要的是所有單元格中心在線上的交點處重疊);
+紫色區域 - 9x3 角色背包欄位。
+
+準備好後，按 [Enter]
+若要返回，請按 [Backspace]
+
+(!!! 完成此配置後，如果遊戲視窗不是全螢幕，請勿在螢幕上移動它!!)""",
         color=QColor('white'),
         padding=MARGIN,
         withBackground=True,
@@ -246,15 +247,15 @@ def chooseThaumVersion(UI: OverlayUI):
     UI.createExitButton()
     infoText = UI.addObject(Text(
         pointTextAnchor.x, pointTextAnchor.y,
-        f"""Выберите версию Thaumcraft и установленные моды-аддоны.
-От этого будут зависеть рецепты получения аспектов.
-Если установленный тобой аддон отсутствует в этом списке, то эта программа
-помочь тебе не сможет. Напиши нам об этом и мы добавим этот аддон
+        f"""選擇 Thaumcraft 版本與安裝的模組。                          
+獲取元素的配方將取決於此。
+如果您安裝的模組不在此清單中，則程式將無法為您提供最好的協助。
+請寫信給我們，我們將添加此模組
 
-Когда выберешь, нажми [Enter]
-Чтобы вернуться назад, нажми [Backspace]
+準備好後，按 [Enter]
+若要返回，請按 [Backspace]
 
-Выбери версию:      Выбери аддоны:""",
+選擇版本:                          選擇模組:""",
         color=QColor('white'),
         withBackground=True,
         backgroundColor=QColor('black'),
@@ -381,13 +382,13 @@ def beReadyForStartSolving(UI: OverlayUI):
 
     UI.addObject(UIPrimitives.Text(
         MARGIN, MARGIN,
-        f"""Сейчас нейросеть будет определять аспекты, находящиеся на поле. 
-Необходимо подключение к интернету.
-Выложи записку исследования в ячейку стола, а инвентарь заполни записками исследований,
-начиная с самого верхнего левого слота. Они будут исследоваться по очереди
+        f"""現在，神經網路將確定場上的各個元素。                   
+需要網路連線。
+將研究筆記放入桌面槽中，然後從左上角的槽開始，
+用研究筆記填滿你的庫存。 它們將被逐一檢查
 
-Как будет готово, жми [Enter]
-Чтобы вернуться назад, нажми [Backspace]""",
+準備好後，按 [Enter]
+若要返回，請按 [Backspace]""",
         color=QColor('white'),
         withBackground=True,
         backgroundColor=QColor('black'),
@@ -610,7 +611,7 @@ def runResearching(UI: OverlayUI, TI: ThaumInteractor):
     textYCoord = MARGIN
     textCellIsNone = UI.addObject(UIPrimitives.Text(
         MARGIN, textYCoord,
-        'Ячейка недоступна (N)',
+        '單元格不可用 (N)  ',
         color=QColor('white'),
         withBackground=True,
         backgroundColor=QColor('black'),
@@ -624,7 +625,7 @@ def runResearching(UI: OverlayUI, TI: ThaumInteractor):
     textYCoord += textCellIsNone.h + MARGIN
     textCellIsFree = UI.addObject(UIPrimitives.Text(
         MARGIN, textYCoord,
-        'Ячейка свободна (F)',
+        '無元素 (F)',
         color=QColor('white'),
         withBackground=True,
         backgroundColor=QColor('black'),
@@ -670,15 +671,14 @@ def runResearching(UI: OverlayUI, TI: ThaumInteractor):
     # draw base dialogue
     activeStateTextObject = UI.addObject(UIPrimitives.Text(
         pointTextAnchor.x, pointTextAnchor.y,
-        f"""Нейросеть определила аспекты на поле.
-Чтобы перегенерировать полученную цепочку решения, нажми [R]
-Если аспекты определены неверно, можно кликнуть на ячейку 
-и выбрать, что в ней должно быть на самом деле. 
+        f"""神經網路識別了該區域的各個元素。                                 
+若要重新產生解決方案，請按 [R]
+如果元素不正確，您可以按一下單元格並選擇其中實際應包含的元素。
 
-Чтобы приостановить программу, нажми [Ctrl + Shift + Пробел]
-Если все определено правильно, жми [Enter]
-Чтобы включить безостановочный режим, жми вместо этого [Ctrl + Enter]
-Чтобы вернуться назад, нажми [Backspace]""",
+若要暫停程式，請按 [Ctrl + Shift + 空格]
+如果一切都正確，請按 [Enter]
+若要啟用不間斷模式，請按 [Ctrl + Enter]
+若要返回，請按 [Backspace]""",
         color=QColor('white'),
         withBackground=True,
         backgroundColor=QColor('black'),
@@ -692,10 +692,10 @@ def runResearching(UI: OverlayUI, TI: ThaumInteractor):
         UI.setAllObjectsVisibility(False)
         onProcessText = UI.addObject(UIPrimitives.Text(
             MARGIN, MARGIN,
-            f"""Подожди, решение выкладывается на поле... 
-Не двигай мышью и не нажимай никакие кнопки.
+            f"""稍等，解決方案正在立即制定中...
+不要移動滑鼠或按任何按鈕。
 
-Для экстренного закрытия программы нажми [Ctrl + Shift + Alt]""",
+若要緊急關閉程序，請按 [Ctrl + Shift + Alt]""",
             color=QColor('white'),
             withBackground=True,
             backgroundColor=QColor('black'),
@@ -742,9 +742,9 @@ def runResearching(UI: OverlayUI, TI: ThaumInteractor):
 
     onPausedText = UI.addObject(UIPrimitives.Text(
         MARGIN, MARGIN,
-        f"""Программа проистановлена.
+        f"""該程式已安裝。
 
-Чтобы продолжить работу, нажми [Ctrl + Shift + Пробел]""",
+若要繼續工作，請按 [Ctrl + Shift + 空格]""",
         color=QColor('white'),
         withBackground=True,
         backgroundColor=QColor('black'),
