@@ -64,6 +64,54 @@
   {
    "optionDest": "datas",
    "value": "./images;images/"
+  },
+  {
+    "optionDest": "datas",
+    "value": "./src;src/"
+  },
+  {
+    "optionDest": "datas",
+    "value": "./src/logic;logic/"
+  },
+  {
+    "optionDest": "datas",
+    "value": "./src/utils;utils/"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "venv"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "keyboard"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "PyQt5"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "PyQt5.QtWidgets"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "mouse"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "pyscreeze"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "scipy"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "scipy.special"
+  },
+  {
+    "optionDest": "hiddenimports",
+    "value": "inference"
   }
  ],
  "nonPyinstallerOptions": {
